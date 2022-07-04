@@ -1,0 +1,5 @@
+from PIL import Image
+from pytesseract import image_to_string
+fname = "img_name.png"
+text = image_to_string(Image.open(fname))
+print(text)
